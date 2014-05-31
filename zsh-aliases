@@ -1,0 +1,24 @@
+# Unix 
+alias tlf="tail -f"
+alias -g G='| grep'
+alias v='vim'
+
+# Bundler
+alias b="bundle"
+
+# Tests and specs
+alias s="rspec"
+
+# Git
+alias g="git status"
+
+# Gems
+alias gi="gem install"
+alias giv="gem install -v"
+
+# RoR
+alias irb="pry"
+alias rk="rake"
+alias r="rails s"
+alias sidekiq-start="bundle exec sidekiq -C config/sidekiq.yml"
+alias pc="pry -r ./config/environment"
