@@ -67,7 +67,9 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-colorscheme grb256
+syntax enable
+set background=dark
+colorscheme solarized
 
 set number
 set numberwidth=5
@@ -116,3 +118,7 @@ nnoremap <C-l> <C-w>l
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
+set colorcolumn=+1 " show character-limit line
+set textwidth=80
+highlight ColorColumn ctermbg=1
