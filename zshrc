@@ -16,7 +16,10 @@ bindkey "^E" end-of-line
 bindkey "^R" history-incremental-search-backward
 bindkey "^P" history-search-backward
 
+autoload -U compinit
+compinit
+
 # load custom executable functions
-for function in ~/.zsh/functions/*; do
+for function in ~/.zsh/*; do
   source $function
 done
