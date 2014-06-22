@@ -29,8 +29,9 @@ Contribution
 ------------
 
 There are several things I want to add in this repo:
-1. Auto-installing Vundle
-2. Creating backups
+
+* Auto-installing Vundle
+* Creating backups
 
 If you want to help me - you are welcome! Just create a feature and notify me with a pull-request.
 
