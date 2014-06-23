@@ -108,6 +108,12 @@ nnoremap <Leader>l :call RunLastSpec()<CR>
 " comment this string if you are using Linux
 let g:rspec_runner = "os_x_iterm"
 
+" vim-mocha mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+let g:mocha_coffee_command = "!clear && mocha --compilers coffee:coffee-script --reporter spec --colors {spec}"
+
 set splitbelow
 set splitright
 
