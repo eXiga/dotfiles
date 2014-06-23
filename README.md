@@ -30,8 +30,9 @@ Contribution
 
 There are several things I want to add in this repo:
 
-* Auto-installing Vundle
-* Creating backups
+* ~~Auto-installing Vundle~~
+* ~~Creating backups~~
+* Maybe add some OOP features in rakefile
 
 If you want to help me - you are welcome! Just create a feature and notify me with a pull-request.
 
