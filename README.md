@@ -22,6 +22,7 @@ rake install
 ```
 
 ~~**Be careful, it will delete _all_ your dotfiles with the same name**~~
+
 **It will create .dfbackup folder in your $HOME directory with all backups**
 
 Voila, you've just installed my dotfiles.
