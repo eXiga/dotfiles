@@ -105,6 +105,8 @@ nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
+" comment this string if you are using Linux
+let g:rspec_runner = "os_x_iterm"
 
 set splitbelow
 set splitright
