@@ -69,7 +69,6 @@ endif
 
 syntax enable
 set background=dark
-colorscheme solarized
 
 set number
 set numberwidth=5
@@ -105,8 +104,7 @@ nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
-" comment this string if you are using Linux
-let g:rspec_runner = "os_x_iterm"
+nnoremap <Leader>a :call RunAllSpecs()<CR>
 
 set splitbelow
 set splitright
@@ -121,6 +119,10 @@ nnoremap <C-l> <C-w>l
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
-set colorcolumn=+1 " show character-limit line
+" vim-airline configuration
+set t_Co=256
+set timeoutlen=100
+
 set textwidth=80
+set cc=+1 " show character-limit line
 highlight ColorColumn ctermbg=1
