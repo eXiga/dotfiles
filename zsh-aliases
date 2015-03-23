@@ -10,7 +10,7 @@ alias b="bundle"
 alias s="rspec"
 
 # Git
-alias g="git status"
+alias gl="git l"
 
 # Gems
 alias gi="gem install"

@@ -5,9 +5,10 @@ plugins=(rvm npm rake gem bundler ruby brew coffee rails sublime)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/Users/eXiga/.rvm/gems/ruby-2.0.0-p353/bin:/Users/eXiga/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/eXiga/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/eXiga/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 source ~/.zsh-aliases
+source ~/.nvm/nvm.sh
 
 # handy keybindings
 bindkey "^A" beginning-of-line
