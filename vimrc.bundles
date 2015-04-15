@@ -21,5 +21,6 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'bling/vim-airline'
+Bundle 'mustache/vim-mustache-handlebars'
 
 filetype on
