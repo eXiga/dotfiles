@@ -22,5 +22,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'bling/vim-airline'
 Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'elixir-lang/vim-elixir'
 
 filetype on
