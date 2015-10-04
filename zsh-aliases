@@ -13,6 +13,9 @@ alias s="rspec"
 alias gi="gem install"
 alias giv="gem install -v"
 
+# Pods
+alias pi="pod install"
+
 # RoR
 alias irb="pry"
 alias rk="rake"
