@@ -2,7 +2,7 @@
 alias tlf="tail -f"
 alias -g G='| grep'
 alias v='vim'
-alias ccd='cd ..'
+alias cd..='cd ..'
 
 # Bundler
 alias b="bundle"
