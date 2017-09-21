@@ -3,6 +3,7 @@ alias tlf="tail -f"
 alias -g G='| grep'
 alias v='vim'
 alias cd..='cd ..'
+alias xcws="open *.xcworkspace"
 
 # Bundler
 alias b="bundle"
@@ -18,7 +19,6 @@ alias giv="gem install -v"
 alias pi="pod install"
 
 # RoR
-alias irb="pry"
 alias rk="rake"
 alias r="rails"
 alias sidekiq-start="bundle exec sidekiq -C config/sidekiq.yml"
