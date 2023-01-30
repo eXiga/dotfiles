@@ -1,39 +1,38 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+prompt_dir() {
+  prompt_segment blue $CURRENT_FG '%2~'
+}
+
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(rvm npm rake gem bundler ruby brew)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/Library/Frameworks/Mono.framework/Versions/Current/bin/:$HOME/.fastlane/bin:$PATH"
-
 source ~/.zsh-aliases
-source ~/.nvm/nvm.sh
 
-# handy keybindings
-bindkey "^A" beginning-of-line
-bindkey "^E" end-of-line
-
-autoload -U compinit
-compinit
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+DISABLE_AUTO_TITLE="true"
 
 # load custom executable functions
 for function in ~/.zsh/*; do
   source $function
 done
 
-# added by travis gem
-[ -f /Users/antonkostenich/.travis/travis.sh ] && source /Users/antonkostenich/.travis/travis.sh
-
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-. /Users/antonkostenich/.opam/opam-init/init.zsh > /dev/null 3> /dev/null || true
-
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-export PATH="/Users/antonkostenich/.local/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

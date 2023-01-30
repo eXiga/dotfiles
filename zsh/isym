@@ -1,5 +1,0 @@
-# run atos to symbolicate log
-
-function isym() {
-  atos -d -o "$1" -arch armv7 -l "$2" "$3"
-}

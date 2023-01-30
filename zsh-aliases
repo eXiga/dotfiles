@@ -1,27 +1,5 @@
 # Unix 
 alias tlf="tail -f"
 alias -g G='| grep'
-alias v='vim'
+alias v='nvim'
 alias cd..='cd ..'
-alias xcws="open *.xcworkspace"
-
-# Bundler
-alias b="bundle"
-
-# Tests and specs
-alias s="rspec"
-
-# Gems
-alias gi="gem install"
-alias giv="gem install -v"
-
-# Pods
-alias pi="pod install"
-
-# RoR
-alias rk="rake"
-alias r="rails"
-alias sidekiq-start="bundle exec sidekiq -C config/sidekiq.yml"
-alias pc="pry -r ./config/environment"
-alias nyan="telnet nyancat.dakko.us"
-

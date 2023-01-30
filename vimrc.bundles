@@ -9,19 +9,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " bundles
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'slim-template/vim-slim'
+
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'bling/vim-airline'
 Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'elixir-lang/vim-elixir'
 
 filetype on
