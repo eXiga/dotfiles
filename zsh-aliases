@@ -1,5 +1,0 @@
-# Unix 
-alias tlf="tail -f"
-alias -g G='| grep'
-alias v='nvim'
-alias cd..='cd ..'
